@@ -1,0 +1,21 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin flexA {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexB {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

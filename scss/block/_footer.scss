@@ -1,0 +1,135 @@
+.site_footer {
+  background-color: $secondary-mirage-blue;
+  background-image: url("../../image/footer-bitmap.svg");
+  background-repeat: no-repeat;
+  background-position: 140% 15%;
+  
+}
+
+.site_footer__container {
+  @include flexC;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.site_footer__navigation {
+  @include flexC;
+}
+
+.site_footer__navbar {
+  margin-left: 64px;
+}
+
+.site_footer__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $primary-white;
+  opacity: 0.7;
+  transition: $transition;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.site_footer__socials {
+  @include flexC;
+}
+
+.site_footer__list {
+  @include flexC;
+}
+
+.site_footer__item + .site_footer__item {
+  margin-left: 40px;
+}
+
+.site_footer__socials_list {
+  @include flexC;
+}
+
+.site_footer__socials_item + .site_footer__socials_item {
+  margin-left: 24px;
+}
+
+#path{
+    transition: $transition;
+}
+
+.site_footer__socials_link:hover #path{
+    fill: $secondary-active-pink;
+}
+#path1{
+    transition: $transition;
+}
+
+.site_footer__socials_link:hover #path1{
+    fill: $secondary-active-pink;
+}
+#path2{
+    transition: $transition;
+}
+
+.site_footer__socials_link:hover #path2{
+    fill: $secondary-active-pink;
+}
+
+@media screen and (max-width:1150px) {
+    .site_footer{
+        background-position: 180% 15%;
+    }
+
+    .site_footer__container{
+        padding-left: 116px;
+        padding-right: 116px;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .site_footer{
+        background-position: 50% -40%;
+    }
+
+    .site_footer__container{
+        display: block;
+        padding-top: 41px;
+        padding-left: 24px;padding-right: 24px;
+    }
+
+    .site_footer__navigation{
+        display: block;
+        margin: 0 auto;
+        max-width: 135px;
+    }
+
+    .site_footer__logo{
+        max-width: 135px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .site_footer__navbar{
+        margin-left: 0;
+    }
+
+    .site_footer__list{
+        @include center;
+        flex-direction: column;
+    }
+
+    .site_footer__item{
+        max-width: 58px;
+        margin: 0 auto  ;
+        margin-bottom: 31px;
+    }
+
+    .site_footer__item + .site_footer__item{
+        margin: 0 auto;
+        margin-bottom: 31px;
+    }
+
+    .site_footer__socials_list{
+        margin: 0 auto;
+    }
+}

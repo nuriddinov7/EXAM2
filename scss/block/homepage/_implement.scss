@@ -1,0 +1,79 @@
+.implement_section_container {
+  padding-top: 150px;
+  @include flexC;
+}
+
+.implement_section__image {
+  max-width: 445px;
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  border-radius: 8px;
+}
+
+.implement_section__text {
+  max-width: 420px;
+}
+
+.implement_section__title {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: $secondary-san-blue;
+  margin-bottom: 24px;
+}
+
+.implement_section__subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: $secondary-light-blue;
+}
+
+@media screen and (max-width: 1300px) {
+  .implement_section_container {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .implement_section_container {
+    display: block;
+    padding-top: 100px;
+  }
+
+  .implement_section__image {
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 48px;
+  }
+
+  .implement_section__text {
+    margin: 0 auto;
+  }
+
+  .implement_section__title {
+    text-align: center;
+  }
+
+  .implement_section__subtitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .implement_section_container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .implement_section__image {
+    max-width: 328px;
+  }
+
+  .implement_section__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
